@@ -1,0 +1,107 @@
+/* <!-- HOMESCREEN ---------------------------------------------------------------------------------------------> */
+.home {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-loop-bg {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    transform: translateX(-50%) translateY(-50%);
+    animation-name: background-anim;
+    animation-duration: 1s;
+}
+
+.video-tint {
+    background-color: #101820b1;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    animation-name: background-anim;
+    animation-duration: 1s;
+}
+
+.home-logo {
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    width: 100%;
+    z-index: 2;
+}
+
+.home-arrow {
+    width: 100px;
+    height: 35px;
+    background-size: 100%;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMzM1IiBoZWlnaHQ9IjEwNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMTUuMjYxIDIuMjA2QzEwLjQwNC0uNDI0IDQuMzM2IDEuMzgyIDEuNzA2IDYuMjQtLjkyNCAxMS4wOTYuODgyIDE3LjE2NCA1Ljc0IDE5Ljc5NGw5LjUyMi0xNy41ODh6bTMxNCAxNy41ODhjNC44NTctMi42MyA2LjY2Mi04LjY5OCA0LjAzMy0xMy41NTUtMi42My00Ljg1Ny04LjY5OC02LjY2Mi0xMy41NTUtNC4wMzNsOS41MjIgMTcuNTg4ek0xNjcuNSA5NmwtNC43NjEgOC43OTRhMTAgMTAgMCAwMDkuNTIyIDBMMTY3LjUgOTZ6TTUuNzM5IDE5Ljc5NGwxNTcgODUgOS41MjItMTcuNTg4LTE1Ny04NS05LjUyMiAxNy41ODh6bTE2Ni41MjIgODVsMTU3LTg1LTkuNTIyLTE3LjU4OC0xNTcgODUgOS41MjIgMTcuNTg4eiIgZmlsbD0iI2ZmZiIvPjwvc3ZnPg==);
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px;
+    z-index: 2;
+}
+
+a.more {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    cursor: default;
+    z-index: 9999;
+}
+
+/* <!-- WORK GALLERY ---------------------------------------------------------------------------------------------> */
+.works {
+    width: 100%;
+    height: 100vh;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.859);
+    color: white;
+}
+
+.works-header {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding-top: 3rem;
+}
+
+.works-gallery {
+    width: 100%;
+    padding: 0 5rem 0 5rem;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5rem;
+    grid-row-gap: 5rem;
+}
+
+.artwork {
+
+}
+
+.artwork-title {
+    display: flex;
+    gap: 0.5em;
+}
+
+.artwork-image img {
+    max-width: 100%;
+}

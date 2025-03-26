@@ -1,0 +1,33 @@
+/* <!-- NAVIGATION BAR ---------------------------------------------------------------------------------------------> */
+.navbar {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+    background-color: #ffffff;
+    z-index: 9999;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 1.5em;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.nav-logo {
+    display: block;
+    height: 3em;
+}
