@@ -68,7 +68,7 @@ a.more {
 .works {
     width: 100%;
     height: 100vh;
-    padding-top: 6rem;
+    padding: 6rem 0 6rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -85,23 +85,46 @@ a.more {
 
 .works-gallery {
     width: 100%;
-    padding: 0 5rem 0 5rem;
+    padding: 0 6rem 0 6rem;
     display: grid;
     justify-content: start;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 5rem;
-    grid-row-gap: 5rem;
+    grid-column-gap: 7.5rem;
+    grid-row-gap: 4rem;
 }
 
-.artwork {
-
-}
+.artwork {}
 
 .artwork-title {
     display: flex;
     gap: 0.5em;
+    margin-bottom: 0.5rem;
+}
+
+.artwork-image a {
+    width: 100%;
 }
 
 .artwork-image img {
     max-width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: top left;
+    /* Scale from the top-left corner */
+    border: 0.2rem solid #f3273400;
+    /* Fully transparent */
+    transition: 0.3s ease-in-out;
+}
+
+.artwork-image {
+    position: relative;
+    display: inline-block;
+}
+
+/* Hover effects */
+.artwork-image img:hover {
+    font-size: 1rem;
+    transform: scale(1.05);
+    /* 0% = 1.0 */
+    border: 0.2rem solid #F32735;
 }

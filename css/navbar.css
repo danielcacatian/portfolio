@@ -16,18 +16,47 @@
     gap: 3em;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
-    font-size: 1.5em;
-    transition: 0.3s;
-}
-
-.nav-links a:hover {
-    color: #ffcc00;
+.nav-socials {
+    display: flex;
+    position: fixed;
+    right: 0;
+    padding-right: 3rem;
+    align-items: center;
+    gap: 1rem;
 }
 
 .nav-logo {
     display: block;
     height: 3em;
+}
+
+.nav-links a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav-socials a {
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    transition: 0.3s;
+}
+
+.nav-socials span {
+    font-size: 1.5rem;
+}
+
+/* Hover effects */
+.nav-links a:hover {
+    color: #F32735;
+}
+
+a.instagram:hover {
+    color: #64c912;
+}
+
+a.linkedin:hover {
+    color: #64c912;
 }
