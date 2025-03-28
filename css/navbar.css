@@ -6,7 +6,7 @@
     align-items: center;
     height: 6rem;
     width: 100%;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
     z-index: 9999;
 }
 
@@ -54,9 +54,9 @@
 }
 
 a.instagram:hover {
-    color: #64c912;
+    color: #E1306C;
 }
 
 a.linkedin:hover {
-    color: #64c912;
+    color: #0077B5;
 }

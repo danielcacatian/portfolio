@@ -18,6 +18,7 @@
 
         body {
             font-family: "Roboto Mono", monospace;
+            overflow-x: hidden;
         }
     </style>
     <!-- Stylesheets -->
@@ -60,84 +61,170 @@
     <!-- WORK GALLERY ------------------------------------------------------>
     <section class="works" id="works">
         <div class="works-header">
-            <p>DIGITAL ART</p>
+            <p class="filter-item active" data-filter="digital-art">DIGITAL ART</p>
             <span class="red">/</span>
-            <p>MISCELLANEOUS</p>
+            <p class="filter-item" data-filter="miscellaneous">MISCELLANEOUS</p>
         </div>
 
-        <div class="works-gallery">
-            <!-- Artwork 1 -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+        <section class="gallery">
+            <!-- DIGITAL ART ------------------------------------------------------>
+            <div class="works-gallery digital-art">
+                <!-- Artwork 1 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
+
+                <!-- Artwork 2 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
+                </div>
+
+                <!-- Artwork 3 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
+                </div>
+
+                <!-- Artwork 4 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
+                </div>
+
+                <!-- Artwork 5 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
+                </div>
+
+                <!-- More Artworks -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>&nbsp;</p> <!-- Blank space -->
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#">
+                            <video autoplay loop muted playsinline class="more-works-video">
+                                <source src="assets/videos/reel.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                        <p>MORE WORKS</p>
+                        <div class="more-works-tint"></div>
+                    </div>
                 </div>
             </div>
 
-            <!-- Artwork 2 -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+            <!-- MISCELLANEOUS ------------------------------------------------------>
+            <div class="works-gallery miscellaneous">
+                <!-- Artwork 1 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>DESIGN</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
-                </div>
-            </div>
 
-            <!-- Artwork 3 -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+                <!-- Artwork 2 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>DESIGN</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
-                </div>
-            </div>
 
-            <!-- Artwork 4 -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+                <!-- Artwork 3 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>DESIGN</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
-                </div>
-            </div>
 
-            <!-- Artwork 5 -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+                <!-- Artwork 4 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>DESIGN</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
-                </div>
-            </div>
 
-            <!-- More Artworks -->
-            <div class="artwork">
-                <div class="artwork-title">
-                    <p>#000</p>
-                    <span class="red">/</span>
-                    <p>ARTWORK NAME</p>
+                <!-- Artwork 5 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>DESIGN</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001"></a>
+                    </div>
                 </div>
-                <div class="artwork-image">
-                    <a href="#"><img src="assets/images/001.png" alt="001"></a>
+
+                <!-- More Artworks -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>&nbsp;</p> <!-- Blank space -->
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#">
+                            <video autoplay loop muted playsinline class="more-works-video">
+                                <source src="assets/videos/reel.mp4" type="video/mp4">
+                            </video>
+                        </a>
+                        <p>MORE WORKS</p>
+                        <div class="more-works-tint"></div>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </section>
 
     <!-- FOOTER ------------------------------------------------------>
@@ -154,6 +241,12 @@
             <a href="" class="linkedin">LINKEDIN</a>
         </div>
     </footer>
+
+    <!-- JAVASCRIPT ------------------------------------------------------>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Scripts -->
+    <script src="js/gallery.js"></script>
 </body>
 
 </html>

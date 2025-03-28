@@ -17,8 +17,6 @@
     height: auto;
     z-index: -100;
     transform: translateX(-50%) translateY(-50%);
-    animation-name: background-anim;
-    animation-duration: 1s;
 }
 
 .video-tint {
@@ -29,8 +27,6 @@
     min-width: 100%;
     min-height: 100%;
     z-index: -1;
-    animation-name: background-anim;
-    animation-duration: 1s;
 }
 
 .home-logo {
@@ -83,7 +79,27 @@ a.more {
     padding-top: 3rem;
 }
 
+.filter-item {
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.filter-item.active {
+    color: #F32735;
+    pointer-events: none;
+}
+
+.gallery{
+    position: relative;
+}
+
 .works-gallery {
+    position: relative;
+    width: 100%;
+    transition: transform 0.5s ease-in-out;
+}
+
+.works-gallery.digital-art {
     width: 100%;
     padding: 0 6rem 0 6rem;
     display: grid;
@@ -91,14 +107,33 @@ a.more {
     grid-template-columns: repeat(3, 1fr);
     grid-column-gap: 7.5rem;
     grid-row-gap: 4rem;
+    transform: translateX(0);
+    opacity: 1;
 }
 
-.artwork {}
+.works-gallery.miscellaneous {
+    width: 100%;
+    padding: 0 6rem 0 6rem;
+    position: absolute;
+    top: 0;
+    display: grid;
+    justify-content: start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 7.5rem;
+    grid-row-gap: 4rem;
+    transform: translateX(100%);
+    opacity: 0;
+}
 
 .artwork-title {
     display: flex;
     gap: 0.5em;
     margin-bottom: 0.5rem;
+}
+
+.artwork-title span,
+.artwork-title .artwork-name {
+    display: none;
 }
 
 .artwork-image a {
@@ -121,10 +156,64 @@ a.more {
     display: inline-block;
 }
 
+.artwork-image p {
+    width: 100%;
+    height: 100%;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    pointer-events: none;
+    transform-origin: top left;
+    transition: 0.3s ease-in-out;
+}
+
+.artwork-image video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    transform-origin: top left;
+    /* Fully transparent */
+    transition: 0.3s ease-in-out;
+    z-index: 0;
+}
+
+.more-works-tint {
+    background-color: #101820b1;
+    border: 0.2rem solid #f3273400;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    transform-origin: top left;
+    transition: 0.3s ease-in-out;
+}
+
 /* Hover effects */
-.artwork-image img:hover {
-    font-size: 1rem;
+.filter-item:hover {
+    color: #F32735;
+}
+
+.artwork-image:hover img {
     transform: scale(1.05);
-    /* 0% = 1.0 */
+    border: 0.2rem solid #F32735;
+}
+
+.artwork-image:hover p {
+    transform: scale(1.05);
+}
+
+.artwork-image:hover video {
+    transform: scale(1.05);
+}
+
+.artwork-image:hover .more-works-tint {
+    transform: scale(1.05);
     border: 0.2rem solid #F32735;
 }
