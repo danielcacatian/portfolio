@@ -96,7 +96,6 @@ a.more {
 .works-gallery {
     position: relative;
     width: 100%;
-    transition: transform 0.5s ease-in-out;
 }
 
 .works-gallery.digital-art {
@@ -109,6 +108,7 @@ a.more {
     grid-row-gap: 4rem;
     transform: translateX(0);
     opacity: 1;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .works-gallery.miscellaneous {
@@ -123,6 +123,12 @@ a.more {
     grid-row-gap: 4rem;
     transform: translateX(100%);
     opacity: 0;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.artwork {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
 }
 
 .artwork-title {
