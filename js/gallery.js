@@ -1,6 +1,11 @@
 // <!-- WORKS GALLERY SCRIPT --------------------------------------------------------------------------------------------->
 // Hover effect
 $(document).ready(function () {
+  // Lazy load images
+  $(".artwork-image img").each(function () {
+    $(this).attr("loading", "lazy");
+  });
+
   $(".artwork-image").hover(
     function () {
       $(this)
