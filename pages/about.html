@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Daniel Cacatian / Portfolio</title>
     <!-- FAVICON ---------------------------------------------------------------->
-    <link rel="icon" href="assets/svg/icon.svg" type="svg" sizes="50x50">
+    <link rel="icon" href="/assets/svg/icon.svg" type="svg" sizes="50x50">
     <!-- FONT ---------------------------------------------------------------->
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
         rel="stylesheet">
@@ -16,6 +16,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -35,14 +38,14 @@
     <!-- NAVIGATION BAR ------------------------------------------------------>
     <nav class="navbar">
         <div class="nav-links">
-            <a href="#works">WORKS</a>
+            <a href="works.html">WORKS</a>
             <a href="/index.html"><img src="/assets/svg/logoB.svg" alt="logo_white" class="nav-logo"></a>
-            <a href="#">ABOUT</a>
+            <a href="#" class="active">ABOUT</a>
         </div>
         <div class="nav-socials">
-            <a href="" class="instagram">INSTAGRAM</a>
+            <a href="" class="instagram" target="_blank">INSTAGRAM</a>
             <span class="red">/</span>
-            <a href="" class="linkedin">LINKEDIN</a>
+            <a href="" class="linkedin" target="_blank">LINKEDIN</a>
         </div>
     </nav>
 
@@ -55,10 +58,34 @@
         <div class="video-tint"></div>
     </div>
 
+    <!-- ABOUT ME ------------------------------------------------------>
     <div id="page-content">
         <section class="about" id="about">
-            <h1>About Me</h1>
-            <p>This is the about page content.</p>
+            <div class="name-placeholder">
+                <h1>DANIEL CACATIAN</h1>
+            </div>
+
+            <img class="about-image" src="/assets/images/001.png" alt="Portrait">
+
+            <div class="about-text">
+                <p>Daniel Cacatian is an English and French-speaking 2D/3D artist that operates in Montréal, Canada. He
+                    has
+                    Bachelor in Fine Arts for Computation Arts from Concordia University, graduated as an honor student
+                    with
+                    a college degree in Graphic Design from Vanier College. He continues to sharpen his skills as an
+                    artist
+                    so he can take them into the film and video game industry.
+                </p>
+                <div class="about-socials">
+                    <a href="" class="">CV</a>
+                    <span class="red">/</span>
+                    <a href="" class="">WORKS</a>
+                    <span class="red">/</span>
+                    <a href="" class="instagram">INSTAGRAM</a>
+                    <span class="red">/</span>
+                    <a href="" class="linkedin">LINKEDIN</a>
+                </div>
+            </div>
         </section>
     </div>
 
@@ -71,9 +98,9 @@
             <p><span class="copyright red">©</span> DANIEL CACATIAN 2020</p>
         </div>
         <div class="footer-socials">
-            <a href="" class="instagram">INSTAGRAM</a>
+            <a href="" class="instagram" target="_blank">INSTAGRAM</a>
             <span class="red">/</span>
-            <a href="" class="linkedin">LINKEDIN</a>
+            <a href="" class="linkedin" target="_blank">LINKEDIN</a>
         </div>
     </footer>
 

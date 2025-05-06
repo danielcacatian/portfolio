@@ -16,6 +16,9 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            text-decoration: none;
+            list-style-type: none;
+            scroll-behavior: smooth;
         }
 
         body {
@@ -34,14 +37,14 @@
     <!-- NAVIGATION BAR ------------------------------------------------------>
     <nav class="navbar">
         <div class="nav-links">
-            <a href="#works">WORKS</a>
-            <a href="#"><img src="assets/svg/logoB.svg" alt="logo_white" class="nav-logo"></a>
+            <a href="pages/works.html">WORKS</a>
+            <a href="#"><img src="assets/svg/logoB.svg" alt="logo_black" class="nav-logo"></a>
             <a href="pages/about.html">ABOUT</a>
         </div>
         <div class="nav-socials">
-            <a href="" class="instagram">INSTAGRAM</a>
+            <a href="" class="instagram" target="_blank">INSTAGRAM</a>
             <span class="red">/</span>
-            <a href="" class="linkedin">LINKEDIN</a>
+            <a href="" class="linkedin" target="_blank">LINKEDIN</a>
         </div>
     </nav>
 
@@ -57,7 +60,7 @@
         </div>
 
         <div class="home-arrow"></div>
-        <a href="#works" class="arrow"></a>
+        <a href="#works" class="arrow" aria-label="Scroll to works section"></a>
     </section>
 
     <!-- WORK GALLERY ------------------------------------------------------>
@@ -71,31 +74,7 @@
         <section class="gallery">
             <!-- DIGITAL ART ------------------------------------------------------>
             <div class="works-gallery digital-art">
-                <!-- Artwork 1 -->
-                <div class="artwork">
-                    <div class="artwork-title">
-                        <p>#000</p>
-                        <span class="red artwork-slash">/</span>
-                        <p class="artwork-name">ARTWORK NAME</p>
-                    </div>
-                    <div class="artwork-image">
-                        <a href="#"><img src="assets/images/001.png" alt="001" loading="lazy"></a>
-                    </div>
-                </div>
-
-                <!-- Artwork 2 -->
-                <div class="artwork">
-                    <div class="artwork-title">
-                        <p>#000</p>
-                        <span class="red artwork-slash">/</span>
-                        <p class="artwork-name">ARTWORK NAME</p>
-                    </div>
-                    <div class="artwork-image">
-                        <a href="#"><img src="assets/images/001.png" alt="001" loading="lazy"></a>
-                    </div>
-                </div>
-
-                <!-- Artwork 3 -->
+                <!-- Artwork 5 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>#000</p>
@@ -119,7 +98,31 @@
                     </div>
                 </div>
 
-                <!-- Artwork 5 -->
+                <!-- Artwork 3 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <!-- Artwork 2 -->
+                <div class="artwork">
+                    <div class="artwork-title">
+                        <p>#000</p>
+                        <span class="red artwork-slash">/</span>
+                        <p class="artwork-name">ARTWORK NAME</p>
+                    </div>
+                    <div class="artwork-image">
+                        <a href="#"><img src="assets/images/001.png" alt="001" loading="lazy"></a>
+                    </div>
+                </div>
+
+                <!-- Artwork 1 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>#000</p>
@@ -137,7 +140,7 @@
                         <p>&nbsp;</p> <!-- Blank space -->
                     </div>
                     <div class="artwork-image">
-                        <a href="#">
+                        <a href="pages/works.html">
                             <video autoplay loop muted playsinline class="more-works-video">
                                 <source src="assets/videos/reel.mp4" type="video/mp4">
                             </video>
@@ -150,7 +153,7 @@
 
             <!-- MISCELLANEOUS ------------------------------------------------------>
             <div class="works-gallery miscellaneous">
-                <!-- Artwork 1 -->
+                <!-- Design 5 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>DESIGN</p>
@@ -162,7 +165,7 @@
                     </div>
                 </div>
 
-                <!-- Artwork 2 -->
+                <!-- Design 4 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>DESIGN</p>
@@ -174,7 +177,7 @@
                     </div>
                 </div>
 
-                <!-- Artwork 3 -->
+                <!-- Design 3 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>DESIGN</p>
@@ -186,7 +189,7 @@
                     </div>
                 </div>
 
-                <!-- Artwork 4 -->
+                <!-- Design 2 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>DESIGN</p>
@@ -198,7 +201,7 @@
                     </div>
                 </div>
 
-                <!-- Artwork 5 -->
+                <!-- Design 1 -->
                 <div class="artwork">
                     <div class="artwork-title">
                         <p>DESIGN</p>
@@ -216,7 +219,7 @@
                         <p>&nbsp;</p> <!-- Blank space -->
                     </div>
                     <div class="artwork-image">
-                        <a href="#">
+                        <a href="pages/works.html">
                             <video autoplay loop muted playsinline class="more-works-video">
                                 <source src="assets/videos/reel.mp4" type="video/mp4">
                             </video>
@@ -238,9 +241,9 @@
             <p><span class="copyright red">©</span> DANIEL CACATIAN 2020</p>
         </div>
         <div class="footer-socials">
-            <a href="" class="instagram">INSTAGRAM</a>
+            <a href="" class="instagram" target="_blank">INSTAGRAM</a>
             <span class="red">/</span>
-            <a href="" class="linkedin">LINKEDIN</a>
+            <a href="" class="linkedin" target="_blank">LINKEDIN</a>
         </div>
     </footer>
 
@@ -249,6 +252,7 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <!-- Scripts -->
     <script src="js/navbar.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/gallery.js"></script>
 </body>
 

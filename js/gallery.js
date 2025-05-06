@@ -29,16 +29,25 @@ $(document).ready(function () {
 
   // Function to reveal artwork images on scroll
   function revealArtwork() {
-    let scrollPos = $(window).scrollTop();
+    let scrollTop = $(window).scrollTop();
     let windowHeight = $(window).height();
+    let scrollBottom = scrollTop + windowHeight;
+    let offset = 200; // buffer space
 
     $(".artwork").each(function () {
-      let artworkOffset = $(this).offset().top;
+      let $artwork = $(this);
+      let elementTop = $artwork.offset().top;
+      let elementBottom = elementTop + $artwork.outerHeight();
 
-      if (scrollPos + windowHeight > artworkOffset + 200) {
-        $(this).stop(true, true).fadeTo(0, 1); // Fade in
+      // Check if element is within viewport, accounting for offset
+      let inView =
+        elementBottom > scrollTop + offset &&
+        elementTop < scrollBottom - offset;
+
+      if (inView) {
+        $artwork.stop(true, true).fadeTo(0, 1).css("pointer-events", "auto");
       } else {
-        $(this).stop(true, true).fadeTo(0, 0); // Fade out when out of view
+        $artwork.stop(true, true).fadeTo(0, 0).css("pointer-events", "none");
       }
     });
   }

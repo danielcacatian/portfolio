@@ -16,6 +16,10 @@
     gap: 3em;
 }
 
+.nav-links a.active {
+    color: #F32735;
+}
+
 .nav-socials {
     display: flex;
     position: fixed;
@@ -32,14 +36,12 @@
 
 .nav-links a {
     font-size: 1.5rem;
-    text-decoration: none;
     color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .nav-socials a {
     font-size: 1.5rem;
-    text-decoration: none;
     color: rgb(0, 0, 0);
     transition: 0.3s;
 }
@@ -54,9 +56,9 @@
 }
 
 a.instagram:hover {
-    color: #E1306C;
+    color: #E1306C !important;
 }
 
 a.linkedin:hover {
-    color: #0077B5;
+    color: #0077B5 !important;
 }
