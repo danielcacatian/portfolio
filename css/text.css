@@ -2,7 +2,28 @@
     color: #F32735;
 }
 
+/* <!-- NAVBAR TEXT ---------------------------------------------------------------------------------------------> */
+.nav-links a {
+    font-size: 1.5rem;
+}
+
+.nav-socials a {
+    font-size: 1.5rem;
+}
+
+.nav-socials span {
+    font-size: 1.5rem;
+}
+
 /* <!-- WORKS TEXT ---------------------------------------------------------------------------------------------> */
+.artwork-image p{
+    font-size: 1.5rem;
+}
+
+.scroll-up {
+    font-size: 3rem;
+}
+
 .works-header {
     font-size: 1.5rem;
 }

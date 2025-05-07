@@ -1,0 +1,194 @@
+/* <!-- MEDIA QUERIES ---------------------------------------------------------------------------------------------> */
+/* <!-- LAPTOP (1440p) ---------------------------------------------------------------------------------------------> */
+@media only screen and (min-width: 1025px) and (max-width: 1440px),
+only screen and (min-width: 853px) and (max-width: 1280px) {
+
+    /* About Me */
+    .name-placeholder {
+        bottom: 70%;
+    }
+
+    .about {
+        padding: 6rem 12rem 0 12rem;
+        grid-column-gap: 3rem;
+    }
+
+    /* Works */
+    .artwork-image p {
+        font-size: 2rem;
+    }
+
+    .works-gallery.digital-art {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .works-gallery.miscellaneous {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* Text */
+    .artwork-title {
+        font-size: 1.25rem;
+    }
+
+    .footer-info {
+        font-size: 1.25rem;
+    }
+
+    .footer-socials {
+        font-size: 1.25rem;
+    }
+}
+
+/* <!-- (125% SCALE)  DESKTOP/LAPTOP + UPSCALE ---------------------------------------------------------------------------------------------> */
+@media (max-width: 1536px) and (min-width: 1535px) and (min-resolution: 120dpi) and (max-resolution: 121dpi) {
+
+    /* Navbar */
+    .navbar {
+        height: 5rem;
+    }
+
+    .nav-logo {
+        height: 2.5em;
+    }
+
+    /* About Me */
+    .name-placeholder {
+        bottom: 70%;
+    }
+
+    .about {
+        padding: 6rem 16rem 0 16rem;
+        grid-column-gap: 3rem;
+    }
+
+    .about-image {
+        max-width: 400px;
+    }
+
+    /* Works */
+    .works-gallery.digital-art {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 4.5rem;
+        grid-row-gap: 2.5rem;
+    }
+
+    .works-gallery.miscellaneous {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 4.5rem;
+        grid-row-gap: 2.5rem;
+    }
+
+    /* Text */
+    .nav-links a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials span {
+        font-size: 1.25rem;
+    }
+
+    .works-header {
+        font-size: 1.25rem;
+    }
+
+    .artwork-title {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1.05rem;
+    }
+}
+
+/* <!-- (150% SCALE) DESKTOP + UPSCALE ---------------------------------------------------------------------------------------------> */
+@media (max-width: 1280px) and (min-width: 1279px) and (min-resolution: 144dpi) and (max-resolution: 145dpi) {
+
+    /* Navbar */
+    .navbar {
+        height: 4rem;
+    }
+
+    .nav-logo {
+        height: 2.5em;
+    }
+
+    /* About Me */
+    .name-placeholder {
+        bottom: 65%;
+    }
+
+    .about {
+        padding: 6rem 12rem 0 12rem;
+        grid-column-gap: 3rem;
+    }
+
+    .about-image {
+        max-width: 300px;
+    }
+
+    /* Works */
+    .works {
+        padding: 4rem 0 4rem 0;
+    }
+
+    .works-gallery.digital-art {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4.5rem;
+        grid-row-gap: 2.5rem;
+    }
+
+    .works-gallery.miscellaneous {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 4.5rem;
+        grid-row-gap: 2.5rem;
+    }
+
+    /* Text */
+    .nav-links a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials span {
+        font-size: 1.25rem;
+    }
+
+    .works-header {
+        font-size: 1.25rem;
+    }
+
+    .artwork-title {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .footer-info {
+        font-size: 1rem;
+    }
+
+    .footer-socials {
+        font-size: 1rem;
+    }
+
+}
+
+/* <!-- MOBILE ---------------------------------------------------------------------------------------------> */
+@media only screen and (max-width: 767px),
+only screen and (orientation: portrait) {
+    /* Index */
+
+    /* About Me */
+
+    /* Works */
+}

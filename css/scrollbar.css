@@ -1,0 +1,15 @@
+/* Entire scrollbar */
+::-webkit-scrollbar {
+    width: 0.6rem; /* vertical scrollbar */
+  }
+  
+  /* Track (background) */
+  ::-webkit-scrollbar-track {
+    background: #101820;
+  }
+  
+  /* Thumb (the draggable part) */
+  ::-webkit-scrollbar-thumb {
+    background: #F32735;
+    border-radius: 10px;
+  }

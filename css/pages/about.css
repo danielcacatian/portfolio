@@ -43,7 +43,7 @@
     background-color: grey;
     border: 2.5px solid #F32735;
     z-index: 2;
-    animation: fadeSlideInTop 0.7s ease-in;  
+    animation: fadeSlideInTop 1.5s ease;  
 }
 
 .about-image {
@@ -53,11 +53,11 @@
     max-width: 450px;
     background-color: grey;
     border: 2.5px solid #F32735;
-    animation: fadeSlideInLeft 0.6s ease-in;  
+    animation: fadeSlideInLeft 1s ease;  
 }
 
 .about-text {
-    animation: fadeSlideInRight 0.6s ease-in;  
+    animation: fadeSlideInRight 2s ease;
 }
 
 .about-socials {

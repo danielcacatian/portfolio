@@ -35,19 +35,13 @@
 }
 
 .nav-links a {
-    font-size: 1.5rem;
     color: rgb(0, 0, 0);
     transition: 0.3s;
 }
 
 .nav-socials a {
-    font-size: 1.5rem;
     color: rgb(0, 0, 0);
     transition: 0.3s;
-}
-
-.nav-socials span {
-    font-size: 1.5rem;
 }
 
 /* Hover effects */
