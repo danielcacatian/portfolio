@@ -232,7 +232,7 @@ only screen and (orientation: portrait) {
     /* About Me */
     .about {
         height: 100%;
-        padding: 12rem 2rem 6rem 2rem;
+        padding: 10rem 2rem 6rem 2rem;
         display: flex;
         flex-direction: column;
         grid-template-columns: repeat(1, 1fr);
@@ -244,7 +244,7 @@ only screen and (orientation: portrait) {
     }
 
     .about-text {
-       padding-top: 1rem;
+        padding-top: 1rem;
     }
 
     /* Works */
@@ -259,22 +259,27 @@ only screen and (orientation: portrait) {
         padding-top: 4rem;
     }
 
-    .artwork-slash, .artwork-name {
-        display: block!important;
+    .artwork-slash,
+    .artwork-name {
+        display: block !important;
     }
 
     .works-gallery.digital-art {
         padding: 0 2rem 0 2rem;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 2rem;
-        grid-row-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
     }
 
     .works-gallery.miscellaneous {
         padding: 0 2rem 0 2rem;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 2rem;
-        grid-row-gap: 1.5rem;
+        grid-row-gap: 2.5rem;
+    }
+
+    .scroll-up {
+        margin: 0 2rem 2rem 0;
     }
 
     /* Footer */
