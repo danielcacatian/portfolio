@@ -186,9 +186,142 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
 /* <!-- MOBILE ---------------------------------------------------------------------------------------------> */
 @media only screen and (max-width: 767px),
 only screen and (orientation: portrait) {
+
+    /* Navbar */
+    .navbar {
+        height: 6rem;
+        width: 100vw;
+    }
+
+    .nav-socials {
+        display: none;
+    }
+
     /* Index */
+    .home {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .video-loop-bg {
+        position: fixed;
+        top: revert-layer;
+        left: revert-layer;
+        width: 100vw;
+        height: 100vh;
+        transform: translate(0, 0) rotate(90deg);
+    }
+
+    .video-tint {
+        position: fixed;
+        top: 0;
+        left: 0;
+        min-width: 100vw;
+        min-height: 100vh;
+        z-index: -1;
+    }
+
+    .home-logo {
+        text-align: center;
+        color: white;
+        font-size: 2rem;
+        width: 100%;
+        z-index: 2;
+    }
 
     /* About Me */
+    .about {
+        height: 100%;
+        padding: 12rem 2rem 6rem 2rem;
+        display: flex;
+        flex-direction: column;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .name-placeholder {
+        bottom: 75%;
+        font-size: 20pt;
+    }
+
+    .about-text {
+       padding-top: 1rem;
+    }
 
     /* Works */
+    .works {
+        padding: 6rem 0 2rem 0;
+    }
+
+    .works-header {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 4rem;
+        padding-top: 4rem;
+    }
+
+    .artwork-slash, .artwork-name {
+        display: block!important;
+    }
+
+    .works-gallery.digital-art {
+        padding: 0 2rem 0 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    .works-gallery.miscellaneous {
+        padding: 0 2rem 0 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        grid-column-gap: 2rem;
+        grid-row-gap: 1.5rem;
+    }
+
+    /* Footer */
+    footer {
+        width: 100%;
+        padding: 2rem;
+        flex-direction: column;
+        color: white;
+    }
+
+    .footer-socials {
+        width: 100%;
+        justify-content: center;
+        margin-top: 2rem;
+        gap: 0.5rem;
+    }
+
+    /* Text */
+    .nav-links a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials a {
+        font-size: 1.25rem;
+    }
+
+    .nav-socials span {
+        font-size: 1.25rem;
+    }
+
+    .works-header {
+        font-size: 1.25rem;
+    }
+
+    .artwork-title {
+        font-size: 1rem;
+    }
+
+    .about-text {
+        font-size: 1rem;
+    }
+
+    .footer-info {
+        font-size: 1rem;
+    }
+
+    .footer-socials {
+        font-size: 1rem;
+    }
 }
