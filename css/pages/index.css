@@ -29,12 +29,25 @@
     z-index: -1;
 }
 
-.home-logo {
-    text-align: center;
-    color: white;
-    font-size: 5rem;
+.home-logos {
     width: 100%;
     z-index: 2;
+}
+
+img.home-logo {
+    position: absolute;
+    width: 7.5%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img.home-name {
+    position: absolute;
+    width: 125%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .home-arrow {

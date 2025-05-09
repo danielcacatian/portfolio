@@ -4,8 +4,12 @@
 only screen and (min-width: 853px) and (max-width: 1280px) {
 
     /* About Me */
-    .name-placeholder {
-        bottom: 70%;
+    .about-name {
+        bottom: 65%;
+    }
+
+    .about-name img {
+        height: 9rem;
     }
 
     .about {
@@ -53,8 +57,12 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
     }
 
     /* About Me */
-    .name-placeholder {
-        bottom: 70%;
+    .about-name {
+        bottom: 65%;
+    }
+
+    .about-name img {
+        height: 8rem;
     }
 
     .about {
@@ -118,8 +126,12 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
     }
 
     /* About Me */
-    .name-placeholder {
+    .about-name {
         bottom: 65%;
+    }
+
+    .about-name img {
+        height: 7rem;
     }
 
     .about {
@@ -205,11 +217,11 @@ only screen and (orientation: portrait) {
 
     .video-loop-bg {
         position: fixed;
-        top: revert-layer;
-        left: revert-layer;
-        width: 100vw;
-        height: 100vh;
-        transform: translate(0, 0) rotate(90deg);
+        top: 50%;
+        left: 50%;
+        width: 220%;
+        height: 204%;
+        transform: translate(-52%, -50%) rotate(90deg);
     }
 
     .video-tint {
@@ -221,12 +233,12 @@ only screen and (orientation: portrait) {
         z-index: -1;
     }
 
-    .home-logo {
-        text-align: center;
-        color: white;
-        font-size: 2rem;
-        width: 100%;
-        z-index: 2;
+    img.home-logo {
+        width: 30%;
+    }
+
+    img.home-name {
+        display: none;
     }
 
     /* About Me */
@@ -238,9 +250,12 @@ only screen and (orientation: portrait) {
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .name-placeholder {
+    .about-name {
         bottom: 75%;
-        font-size: 20pt;
+    }
+
+    .about-name img {
+        height: 4rem;
     }
 
     .about-text {
