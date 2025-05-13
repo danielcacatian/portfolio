@@ -85,6 +85,7 @@ a.arrow {
     gap: 2rem;
     margin-bottom: 3rem;
     padding-top: 3rem;
+    z-index: 5;
 }
 
 .filter-item {
