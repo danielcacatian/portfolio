@@ -26,7 +26,7 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .works-gallery.miscellaneous {
+    .works-gallery.design {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -81,7 +81,7 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
         grid-row-gap: 2.5rem;
     }
 
-    .works-gallery.miscellaneous {
+    .works-gallery.design {
         grid-template-columns: repeat(3, 1fr);
         grid-column-gap: 4.5rem;
         grid-row-gap: 2.5rem;
@@ -110,6 +110,10 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
 
     .about-text {
         font-size: 1.05rem;
+    }
+
+    .information {
+        font-size: 1rem;
     }
 }
 
@@ -154,10 +158,14 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
         grid-row-gap: 2.5rem;
     }
 
-    .works-gallery.miscellaneous {
+    .works-gallery.design {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 4.5rem;
         grid-row-gap: 2.5rem;
+    }
+
+    .display {
+        padding: 3rem 6rem 3rem 6rem;
     }
 
     /* Text */
@@ -182,6 +190,10 @@ only screen and (min-width: 853px) and (max-width: 1280px) {
     }
 
     .about-text {
+        font-size: 1rem;
+    }
+
+    .information {
         font-size: 1rem;
     }
 
@@ -286,7 +298,7 @@ only screen and (orientation: portrait) {
         grid-row-gap: 2.5rem;
     }
 
-    .works-gallery.miscellaneous {
+    .works-gallery.design {
         padding: 0 2rem 0 2rem;
         grid-template-columns: repeat(1, 1fr);
         grid-column-gap: 2rem;
@@ -295,6 +307,11 @@ only screen and (orientation: portrait) {
 
     .scroll-up {
         margin: 0 2rem 2rem 0;
+    }
+
+    .display {
+        padding: 3rem 6rem 3rem 6rem;
+        gap: 2rem;
     }
 
     /* Footer */
@@ -330,6 +347,10 @@ only screen and (orientation: portrait) {
     }
 
     .artwork-title {
+        font-size: 1rem;
+    }
+
+    .information {
         font-size: 1rem;
     }
 

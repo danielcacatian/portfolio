@@ -6,7 +6,7 @@ footer {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: rgba(0, 0, 0, 0.859);
+    background-color: #000000;
     color: white;
 }
 
