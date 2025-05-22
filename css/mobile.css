@@ -310,7 +310,7 @@ only screen and (orientation: portrait) {
     }
 
     .display {
-        padding: 3rem 6rem 3rem 6rem;
+        padding: 3rem 2rem 3rem 2rem;
         gap: 2rem;
     }
 
