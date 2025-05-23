@@ -204,6 +204,12 @@
     max-width: 100%;
 }
 
+.images iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+}
+
 .information a:hover {
     color: #F32735;
 }
