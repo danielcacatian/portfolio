@@ -31,7 +31,6 @@
     object-fit: cover;
     max-width: 450px;
     background-color: grey;
-    border: 2.5px solid #F32735;
     animation: fadeSlideInLeft 1s ease;  
 }
 

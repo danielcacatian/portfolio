@@ -263,7 +263,7 @@ only screen and (orientation: portrait) {
     }
 
     .about-name {
-        bottom: 75%;
+        bottom: 70%;
     }
 
     .about-name img {
@@ -277,6 +277,7 @@ only screen and (orientation: portrait) {
     /* Works */
     .works {
         padding: 6rem 0 2rem 0;
+        height: 100%;
     }
 
     .works-header {
