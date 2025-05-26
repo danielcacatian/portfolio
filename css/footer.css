@@ -17,6 +17,10 @@ footer {
     gap: 0.5rem;
 }
 
+.footer-info img {
+    height: 6rem;
+}
+
 .footer-socials {
     display: flex;
     flex-direction: row;

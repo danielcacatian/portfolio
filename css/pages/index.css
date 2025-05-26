@@ -44,10 +44,11 @@ img.home-logo {
 
 img.home-name {
     position: absolute;
-    width: 125%;
+    width: 100%;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    aspect-ratio: 16 / 9;
 }
 
 .home-arrow {
